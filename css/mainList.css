@@ -1,0 +1,39 @@
+/*  商品列表*/
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.root1390 .product-list {
+    width: 1390px;
+}
+.product-list {
+    width: 1190px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+.root1390 .product-list>ul {
+    width: 1400px;
+}
+.product-list>ul {
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+}
+.goodsIcon {
+    width: 240px;
+    height: 456px;
+    position: relative;
+    margin-top: 10px;
+    float: left;
+    padding-top: 10px;
+    display: block;
+    text-decoration: none;
+}
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="//www.suning.com/favicon.ico" type="image/x-icon">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/signIn/signIn.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="http://www.suning.com" class="logo"></a>
+        <div style="margin-left:189px;padding:37px 0 0 16px;*zoom:1">
+            <div style="margin-right:-100px;*zoom:1">
+                <div class="bind-phone">依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号绑定验证！<a target="_blank"
+                        href="https://sale.suning.com/all/regProtocol/yssm.html">
+                        <font color="#f60">《隐私政策》</font>
+                    </a>已上线，将更有利于保护您的个人隐私。</div>
+            </div>
+            <!-- <a name="Logon_index_denglu020" id="LOGIN_ADVISE" href="https://qss.suning.com/ea486.htm" target="_blank" class="advise"><i></i>我想对“登录”提意见</a> -->
+        </div>
+
+    </div>
+
+    <div class="main" sap-modid="oKx8J"
+        style="background:url(https://image.suning.cn/uimg/cms/img/160586064082678256.jpg) center no-repeat;">
+        <div class="login-c">
+            <a target="_blank" class="single-link" name="Logon_index_denglu005"></a>
+            <div class="login-form">
+                <form action="http://10.9.25.133:4001/server/LoginUser.php" method="POST" id="form1"  >
+                    <div class="login-tab">
+                        <span>用户登录</span>
+                    </div>
+                    <div class="pc-login">
+                        <div class="username-login">
+
+                            <div>
+                                <div class="login-warning" style="display: none;"><i></i><span>公共场所不建议自动登录！</span></div>
+                                <div class="login-error" style="display:none;"><i></i><span></span></div>
+                                <div class="login-blank" style="line-height: 40px; display: block;">&nbsp;</div>
+                            </div>
+
+
+                            <div class="username-box">
+                                <div class="input-box" id="showErrorUsernameDiv">
+                                    <input type="text" id="user" name="username" placeholder="用户名/手机/邮箱"
+                                        onfocus="this.placeholder=''" onblur="this.placeholder='用户名/手机/邮箱'">
+                                    <i class="icon username-icon"></i>
+                                </div>
+                                <div class="email-list hide"></div>
+                            </div>
+
+
+                            <div class="password-box">
+                                <div class="input-box" id="showErrorPwdDiv">
+                                    <input type="password" id="password" name="password" placeholder="密码"
+                                        onblur="this.placeholder='密码'">
+                                    <i class="icon password-icon"></i>
+                                    <i class="clear"></i>
+                                </div>
+                            </div>
+
+                            <div class="login-help clearfix">
+                                <a class="login-switch" ><i></i>短信验证码登录</a>
+                                <a id="FORGET_PWD" href="javascript:void(0);"
+                                    name="Logon_index_denglu001"
+                                    class="forget-password">忘记密码？</a>
+
+                            </div>
+
+                            <div>
+                                <input type="submit" id="loginIn" value="登录" >
+                            </div>
+                            <div class="free-reg">
+                                <input id="register" type="button" value="注册 有惊喜" style="font-size: 12px; color: sandybrown; border: none;background-color: #fff;cursor: pointer;">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="ng-footer">
+        <div class="ng-s-footer"
+            style="width: 100%;min-width: 990px;padding-top: 15px;text-align: center;background-color: #fff;">
+            <div class="ng-s-f-con" style="height: 185px;width: 990px;min-width: 990px;margin: 0 auto;">
+                <p class="ng-url-list" style="line-height: 25px;height: 25px;"><a href="https://10035.suning.com/"
+                        target="_blank" name="public0_none_sn_hulian"> 苏宁互联</a><span>|</span><a
+                        href="https://jinrong.suning.com" target="_blank"
+                        name="public0_none_sn_jinrong">苏宁金融</a><span>|</span><a
+                        href="https://pay.suning.com/epp-epw/login/login.action?idsTrustFrom=suning&amp;ticket=ST1F1671F32556BC51442EB2ED516EB41D"
+                        target="_blank" name="public0_none_sn_zhifu1">苏宁支付</a><span>|</span><a
+                        href="https://www.pptv.com/?rcc_id=snyg" target="_blank"
+                        name="public0_none_sn_pptv">PP视频</a><span>|</span><a href="https://redbaby.suning.com/"
+                        target="_blank" name="public0_none_sn_redbaby">红孩子</a><span>|</span><a
+                        href="https://wuliu.suning.com/slp/" target="_blank"
+                        name="public0_none_sn_wuliu">苏宁物流</a><span>|</span><a
+                        href="https://cuxiao.suning.com/newUser.html" target="_blank" name="public0_none_sn_shouji">手机苏宁
+                    </a><span>|</span><a href="https://lsy.suning.com/" target="_blank" name="">零售云</a><span>|</span><a
+                        href="https://www.suningcloud.com" target="_blank" name="">苏宁云</a><span>|</span><a
+                        href="https://ipp.suning.com/sips/toAgree.action" target="_blank"
+                        name="public0_none_sn_zhishi">知识产权举报</a><span>|</span><a
+                        href="https://www.suning.cn/cms/enterpriseManagementIntro/index.htm" target="_blank"
+                        name="">投资者关系</a></p>
+                <p class="ng-url-list" style="line-height: 25px;height: 25px;"><a
+                        href="https://help.suning.com/page/id-469.htm" target="_blank"
+                        name="public0_none_sn_callme">联系我们</a><span>|</span><a href="https://careers.suning.cn/"
+                        target="_blank" name="public0_none_sn_zhaopin">诚聘英才</a><span>|</span><a
+                        href="https://sop.suning.com/sel/canvassBusCenter/showModelDetailNew.htm?model=K"
+                        target="_blank" name="public0_none_sn_gongyingshang">供应商入驻</a><span>|</span><a
+                        href="https://ap.suning.com/aps-sale-web/" target="_blank"
+                        name="public0_none_sn_guanggao">广告平台</a><span>|</span><a href="https://sums.suning.com/"
+                        target="_blank" name="public0_none_sn_lianmeng">苏宁联盟</a><span>|</span><a
+                        href="https://zb.suning.com/bid-web/main.htm" target="_blank"
+                        name="public0_none_sn_zhaobiao">苏宁招标</a><span>|</span><a
+                        href="https://sums.suning.com/aas/links.html" target="_blank"
+                        name="public0_none_sn_link">友情链接</a><span>|</span><a
+                        href="https://help.suning.com/page/id-281.htm" target="_blank"
+                        name="public0_none_sn_law">隐私声明</a><span>|</span><a href="https://ued.suning.com/survey/"
+                        target="_blank" name="public0_none_sn_tiyan">用户体验提升计划</a><span>|</span><a
+                        href="https://mrs.suning.com/mrs-web/stockholder/check.htm" target="_blank"
+                        name="public0_none_sn_gudong">股东会员认证</a></p>
+                <p class="ng-copyright" style="display: block;width: 990px;float: left;margin-top: 0">
+                    Copyright? 2002-2020，苏宁易购集团股份有限公司版权所有<span style="color: #888;padding: 0 8px;">|</span>
+                    <a target="_blank"
+                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32010202010078"
+                        rel="nofollow" style="color:#999;position: relative;padding-left: 25px;" class="gwab"><i
+                            style="position: absolute;left: 0;top: 0;width: 20px; height: 20px;background-image: url(//image.suning.cn/uimg/cms/img/154529778410088431.png)"></i>苏公网安备
+                        32010202010078号</a><span style="color: #888;padding: 0 8px;">|</span>
+                    <a href="http://www.miitbeian.gov.cn" target="_blank" style="color:#999">苏ICP备10207551号-4</a></p>
+                <p class="ng-copyright ng-copyright-2" style="display: block;width: 990px;float: left;margin-top: 0">
+                    <a href="//res.suning.cn/public/v3/images/dx5006.png" target="_blank" rel="nofollow"
+                        style="color:#999">合字B2-20180025</a><span style="color: #888;padding: 0 8px;">|</span>
+                    <a href="//res.suning.cn/public/v3/images/dx1001.png" target="_blank" rel="nofollow"
+                        style="color:#999">合字A1.B1.B2-20180017</a><span style="color: #888;padding: 0 8px;">|</span>
+                    <a href="//res.suning.cn/public/v3/images/cbw-20180619.jpg" target="_blank" rel="nofollow"
+                        style="color:#999">出版物经营许可证新出发苏批字第A-243号</a><span style="color: #888;padding: 0 8px;">|</span>
+                    互联网药品信息服务资格证书<a href="//res.suning.cn/public/v3/images/yaopin_new.png" target="_blank"
+                        rel="nofollow" style="color:#999">（苏）-非经营性-2016-0005</a></p>
+                <p class="ng-copyright ng-copyright-3" style="display: block;width: 990px;float: left;margin-top: 0">
+                    <a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/ccaf7746824a4f91af567c29abc4b6aa"
+                        target="_blank" rel="nofollow" style="color:#999">网络文化经营许可证：苏网文〔2018〕10580-203号</a>
+                </p>
+                <p class="ng-copyright" style="display: block;width: 990px;float: left;margin-top: 0">
+                    本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）</p>
+                <div class="ng-authentication" style="display: block;float: left;height: 25px;margin-top: 5px;">
+                    <a href="https://search.szfw.org/cert/l/CX20111018000608000610" target="_blank"
+                        name="public0_none_wb_zs0302" rel="nofollow">
+                        <img src="//res.suning.cn/public/v3/images/chengxin.png" height="24" width="76" alt="诚信网站">
+                    </a>
+                    <a href="http://image.suning.cn/uimg/snnet/snnetImg/142891196680527240.jpg" target="_blank"
+                        name="public0_none_wb_zs0303" rel="nofollow">
+                        <img src="//res.suning.cn/public/v3/images/unicom.png" height="24" width="76"
+                            alt="中国联通授权网络经营代理商">
+                    </a>
+                    <a href="//res.suning.cn/public/v3/images/dianxin_content.jpg" target="_blank"
+                        name="public0_none_wb_zs0304" rel="nofollow">
+                        <img src="//res.suning.cn/public/v3/images/dianxin.jpg" height="24" width="76"
+                            alt="中国电信授权网络经营代理商">
+                    </a>
+                    <a href="http://odr.jsdsgsxt.gov.cn/mbm/entweb/elec/certView.shtml?siteId=27cfad762f3d45069d79a9f8f83f458f"
+                        target="_blank" rel="nofollow" name="public0_none_wb_zs0303">
+                        <img src="//res.suning.cn/public/v3/images/dianzi.png?v=02" height="24" width="76" alt="电子营业执照">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./js/jQuery/jquery-2.2.4.min.js"></script> -->
+    <script type="module">
+          import RegForm from "./js/login/RegForm.js";
+        init();
+        var form = document.querySelector("#form1");
+        form.addEventListener("submit", submitHandler)
+        function init() {
+            var register = document.querySelector("#register");
+            register.addEventListener("click", clickHandler);
+            var password = document.querySelector("#password");
+            password.addEventListener("input", inputHandler);
+        }
+        function clickHandler(e) {
+            location.href = "./signUp.html";
+        }
+        function inputHandler(e) {
+            RegForm.inputVerify(this, this.nextElementSibling);
+        }
+        function submitHandler(e) {
+            // var elems=document.querySelectorAll(":not[required]")//选择没有required属性的
+            if(!RegForm.allFormVerify(form)) e.preventDefault();//不满足条件阻止提交事件
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="//www.suning.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css//header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/index/public.css">
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index/detail.css">
+  
+   
+    <title>商品详情</title>
+</head>
+
+<body class="root1390">
+    <div class="ng-toolbar">
+        <div class="ng-toolbar-con wrapper">
+            <div class="ng-toolbar-left">
+                <a href="./index.html" class="ng-bar-node ng-bar-node-backhome" id="ng-bar-node-backhome"
+                    name="public0_none_gongju_fanhui" sap-modid="pyiw5" style="display: block;">
+                    <i class="ng-iconfont ng-backhome"><img src="./img/ng1.png" alt=""
+                            id="backhome"></i><span>返回首页</span>
+                </a>
+                <div class="ng-bar-node-box ng-site-nav-box lazy-bar-box" sap-modid="sTMJP">
+                    <a href="javascript:void(0);" class="ng-bar-node ng-bar-node-site" name="public0_none_daohang_wzdh">
+                        <span>网站导航</span><em class="ng-iconfont down"><img src="./img/ng2.png" alt=""></em>
+                    </a>
+                    <div class="ng-sn-site-nav ng-d-box site-nav-child" style="display:none;">
+                        <!--网站导航列表-->
+                        <div class="head-loading"></div>
+                        <a href="javascript:void(0);" class="ng-close" name="public0_none_daohang_close"><em
+                                class="ng-iconfont"></em></a>
+                    </div>
+                </div>
+
+                <div class="ng-bar-node-box shop-handle lazy-bar-box" sap-modid="yj2Q">
+                    <a href="https://sop.suning.com" class="ng-bar-node ng-bar-node-pr5  ng-bar-node-shop touch-href"
+                        name="public0_none_shangjia_ruzhu" target="_blank"><span>商家入驻</span><em
+                            class="ng-iconfont down"><img src="./img/ng2.png" alt=""></em></a>
+                    <div class="ng-down-box ng-d-box shop-center-child ng-ser-list" style="display:none;">
+                        <!--商家入驻列表-->
+                        <div class="head-loading"></div>
+                    </div>
+                </div>
+
+                <div class="ng-bar-node-box service-handle lazy-bar-box" sap-modid="Fgfr4">
+                    <a href="javascript:void(0);"
+                        class="ng-bar-node ng-bar-node-service ng-bar-node-fix touch-href ng-bar-node-pr5"
+                        rel="nofollow" name="public0_none_kehu_fuwu"><span>客户服务</span><em class="ng-iconfont down"><img
+                                src="./img/ng2.png" alt=""></em>
+                    </a>
+                    <div class="ng-down-box ng-d-box service-center-child ng-ser-list" style="display:none;">
+                        <!--服务中心列表-->
+                        <div class="head-loading"></div>
+                        <a href="javascript:navIndex();" rel="nofollow" name="public0_none_kehu_zixun"
+                            style="display:none;"><span>在线咨询</span><em class="ng-iconfont"></em></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ng-toolbar-right">
+                <!-- 登录注册 -->
+                <a href="javascript:void(0)" class="ng-bar-node username-bar-node username-bar-node-showside"
+                    id="username-node" rel="nofollow" style="display:none;">
+                    <span id="usernameHtml01"></span>
+                    <em class="hasmsg ng-iconfont"></em>
+                </a>
+                <div class="ng-bar-node-box username-handle" id="username-node-slide" style="display:none;"
+                    sap-modid="AVsm">
+                    <a href="//my.suning.com" rel="nofollow"
+                        class="ng-bar-node username-bar-node username-bar-node-noside" style="display: none;">
+                        <span id="usernameHtml02"></span>
+                        <em class="hasmsg ng-iconfont"></em>
+                        <em class="ng-iconfont down"></em>
+                    </a>
+                    <div class="ng-d-box ng-down-box ng-username-slide" style="display:none;">
+                        <a href="//my.suning.com/person.do" class="ng-vip-union" target="_blank"
+                            name="public0_none_denglu_zhanghao" rel="nofollow">账号管理</a>
+                        <a href="javascript:SFE.base.logoff();" rel="nofollow"
+                            name="public0_none_denglu_tuichu">退出登录</a>
+                    </div>
+                </div>
+                <div class="ng-bar-node reg-bar-node" id="reg-bar-node" sap-modid="dYp4" style="display: block;">
+                    <a href="http://localhost:4001/signIn.html" name="public0_none_denglu_denglu" rel="nofollow"
+                        class="login">请登录</a>
+                    <a href="http://localhost:4001/signUp.html" target="_blank" class="login reg-bbb" rel="nofollow"
+                        name="public0_none_denglu_zhuce">注册有礼</a>
+                </div>
+
+
+                <!--我的订单 [[-->
+                <div class="ng-bar-node-box myorder-handle" sap-modid="Ygnh">
+                    <a href="//order.suning.com/order/orderList.do" rel="nofollow" name="public0_none_wode_dingdan"
+                        class="ng-bar-node ng-bar-node-fix touch-href ng-bar-node-pr5"><span>我的订单</span><em
+                            class="ng-iconfont down"><img src="./img/ng2.png" alt=""></em></a>
+                    <div class="ng-down-box ng-d-box myorder-child" style="display:none;">
+                        <a href="//order.suning.com/order/orderList.do?transStatus=waitPay" rel="nofollow"
+                            name="public0_none_wode_zhufu">待支付<em id="waitPayCounts"></em></a>
+                        <a href="//order.suning.com/order/orderList.do?transStatus=waitReceive" rel="nofollow"
+                            name="public0_none_wode_shouhuo">待收货<em id="waitDeliveryCounts"></em></a>
+                        <a href="//review.suning.com/my_cmmdty_review.do" rel="nofollow"
+                            name="public0_none_wode_pingjia">待评价<em id="waitEvaluation"></em></a>
+                        <a href="//snasss.suning.com/snass-web/pc/modify/toModifyOrderList.do" rel="nofollow"
+                            name="public0_none_wode_xiugai">修改订单</a>
+                    </div>
+                </div>
+                <!--我的订单 ]]-->
+
+                <!--我的易购 [[-->
+                <div class="ng-bar-node-box mysuning-handle" sap-modid="P5ptt">
+                    <a href="//my.suning.com" rel="nofollow" name="public0_none_wode_yigou"
+                        class="ng-bar-node ng-bar-node-fix touch-href ng-bar-node-pr5"><span>我的易购</span><em
+                            class="ng-iconfont down"><img src="./img/ng2.png" alt=""></em></a>
+                    <div class="ng-down-box ng-d-box mysuning-child" style="display:none;">
+                        <div class="mysuning-infor clearfix">
+                            <a name="public0_none_wode_touxiang" target="_blank"
+                                href="//my.suning.com/person.do?targetTab=head" class="headimg"><img
+                                    src3="//res.suning.cn/public/v3/images/tool-logo.png?v=2020081101" alt=""
+                                    id="userHead"></a>
+                            <div class="mysuning-detail">
+                                <a name="public0_none_denglu_denglu" href="javascript:SFE.base.logonurl();"
+                                    class="login">请登录</a>
+                                <a name="public0_none_wode_name" href="//my.suning.com" rel="nofollow" class="username"
+                                    id="userNickname"></a>
+                            </div>
+                        </div>
+                        <a href="//snwm.suning.com/" name="public0_none_wode_ershou" rel="nofollow"
+                            target="_blank">我的消息</a>
+                        <a href="//favorite.suning.com/myFavoriteImg.do" rel="nofollow"
+                            name="public0_none_wode_shoucang" target="_blank">我的关注</a>
+                        <a href="https://passport.suning.com/ids/trustLogin?sysCode=epp&amp;targetUrl=http://my.jr.suning.com/sfp/accountAssets/index.htm"
+                            rel="nofollow" name="public0_none_wode_jinrong" target="_blank">我的金融</a>
+                        <a href="//vip.suning.com" class="ng-vip-union" target="_blank" rel="nofollow"
+                            name="public0_none_wode_huiyuan">苏宁会员<em class="ng-iconfont"></em></a>
+                        <a href="https://rxf.suning.com/epps-cpf/accountMgt/assetOverview.do" rel="nofollow"
+                            name="public0_none_wode_renxingfu">我的任性付</a>
+                        <a href="//quan.suning.com/yhq.do" rel="nofollow" name="public0_none_wode_quan">我的优惠券</a>
+                    </div>
+                </div>
+                <!--我的易购 ]]-->
+                <a href="//vip.suning.com/" name="public0_none_sn_huiyuan" rel="nofollow"
+                    class="ng-bar-node ng-bar-node-pr5" target="_blank" sap-modid="lAi5"><span>苏宁会员</span></a>
+                <!--[[ 购物车  2017-06-08 添加购物车商品 -->
+                <div class="ng-bar-node-box cart-handle" sap-modid="lQl9p">
+                    <a class="ng-bar-node ng-bar-node-mini-cart " name="public0_none_gouwuche_gwc" rel="nofollow"
+                        href="#">
+                        <em class="ng-iconfont cart"></em><span><a href="./cart.html">购物车</a></span>
+                        <span class="total-num-box" id="J_total_num_box">
+                            <b class="total-num J_cart_total_num" id="showTotalQty">0</b>
+                            <span class="total-num-bg-box">
+                                <em></em>
+                                <i></i>
+                            </span>
+                        </span>
+                        <em class="ng-iconfont down"><img src="./img/ng2.png" alt=""></em>
+                    </a>
+                    <div class="ng-down-box ng-d-box cart-child" style="display:none;">
+                        <!-- -->
+                        <div class="cart-box">
+
+                        </div>
+                        <div class="cart-loading">
+                            <p class="loading-content">加载中...</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 购物车 ]] -->
+
+                <a href="https://passport.suning.com/ids/trustLogin?sysCode=epp&amp;agentType=pc&amp;targetUrl=https://pay.suning.com/epp-epw/login/login.action"
+                    name="public0_none_yifubao_yfb" class="ng-bar-node ng-bar-node-pr5" target="_blank"
+                    sap-modid="KdRR"><span>易付宝</span></a>
+                <a href="//b.suning.com/" class="ng-bar-node ng-bar-node-pr5" name="public0_none_qiye_caigou"
+                    target="_blank" sap-modid="TJwSg"><span>企业采购</span></a>
+
+                <!--手机苏宁 [[-->
+                <div class="ng-bar-node-box app-down-box" sap-modid="3D1su">
+                    <a href="//cuxiao.suning.com/newUser.html" target="_blank" name="public0_none_shouji_sn"
+                        rel="nofollow" class="ng-bar-node mb-suning touch-href"><span>手机苏宁</span><em
+                            class="ng-iconfont down"><img src="./img/ng2.png" alt=""></em></a>
+                    <div class="ng-mb-box ng-d-box mb-down-child" style="display:none;">
+                        <ul class="ng-app-code">
+                            <li>
+                                <img class="top-code" src3="//res.suning.cn/public/v3/images/top-code4.jpg?var=01"
+                                    alt="苏宁易购APP">
+                                <p>扫一扫</p>
+                                <p>下载苏宁易购APP</p>
+                            </li>
+                            <li>
+                                <img class="top-code" src3="//res.suning.cn/public/v3/images/top-code1.jpg?var=01"
+                                    alt="苏宁推客公众号">
+                                <p>关注苏宁推客公众号</p>
+                                <p>自购省钱·分享赚钱</p>
+                            </li>
+                            <li>
+                                <img class="top-code" src3="//res.suning.cn/public/v3/images/top-code2.jpg?var=01"
+                                    alt="易付宝APP">
+                                <p>扫一扫</p>
+                                <p>下载苏宁金融APP</p>
+                            </li>
+                            <li>
+                                <img class="top-code" src3="//res.suning.cn/public/v3/images/top-code3.png?var=01"
+                                    alt="易购服务号">
+                                <p>扫一扫</p>
+                                <p>关注苏宁易购服务号</p>
+                            </li>
+                        </ul>
+                        <div class="line"></div>
+                        <div class="line lineTwo"></div>
+                    </div>
+                </div>
+                <!--手机苏宁 ]]-->
+            </div>
+        </div>
+    </div>
+    <div class="ng-header ng-channel-header">
+        <div class="ng-header-con">
+            <div class="wrapper">
+                <div class="ng-logo-box" id="G_SUNING_LOGO">
+
+
+
+
+
+
+
+
+                    <!-- LOGO -->
+                    <a href="http://www.suning.com" class="ng-logo">
+                        <img src="//res.suning.cn/public/v3/images/logo/snlogo.png?v=2020081101" height="90" width="190"
+                            alt="苏宁易购">
+                    </a>
+
+                    <span id="G_CHANNEL_LOGO" class="channel-logo"></span>
+                </div>
+                <div class="ng-search channel-search">
+
+
+
+
+
+
+                    <!-- PRFLS SEARCH -->
+                    <div class="g-search" sap-modid="gSearch" id="forms">
+                        
+                        <form method="get">
+                            <div class="search-keyword-box new-box">
+                                <input tabindex="0" id="searchKeywords" type="text" class="search-keyword"
+                                    name="index1_none_search_ss2" value="" autocomplete="off">
+                            </div>
+                            <input id="searchSubmit" type="submit" class="search-btn btn-new"
+                                name="index1_none_search_ss1" value="搜索">
+                            <div id="snKeywordNew" class="g-search-hotwords"><a sa-data="{'eletp':'xgsskeyword'}"
+                                    name="public0_XGSS_华为mate40_0-0" target="_blank" href="/%E5%8D%8E%E4%B8%BAmate40/"
+                                    sap-expo="true">华为mate40</a><a sa-data="{'eletp':'xgsskeyword'}"
+                                    name="public0_XGSS_小米电源2c_1-0" target="_blank"
+                                    href="/%E5%B0%8F%E7%B1%B3%E7%94%B5%E6%BA%902c/" sap-expo="true">小米电源2c</a><a
+                                    sa-data="{'eletp':'xgsskeyword'}" name="public0_XGSS_华为p9plus充电宝_2-0"
+                                    target="_blank" href="/ynshh.html" sap-expo="true">华为p9plus充电宝</a><a
+                                    sa-data="{'eletp':'xgsskeyword'}" name="public0_XGSS_充电宝镜面_3-0" target="_blank"
+                                    href="/%E5%85%85%E7%94%B5%E5%AE%9D%E9%95%9C%E9%9D%A2/" sap-expo="true">充电宝镜面</a><a
+                                    sa-data="{'eletp':'xgsskeyword'}" name="public0_XGSS_3.7v充电宝_4-0" target="_blank"
+                                    href="/3.7v%E5%85%85%E7%94%B5%E5%AE%9D/" sap-expo="true">3.7v充电宝</a><a
+                                    sa-data="{'eletp':'xgsskeyword'}" name="public0_XGSS_小米移动电源高配版_5-0" target="_blank"
+                                    href="/%E5%B0%8F%E7%B1%B3%E7%A7%BB%E5%8A%A8%E7%94%B5%E6%BA%90%E9%AB%98%E9%85%8D%E7%89%88/"
+                                    sap-expo="true">小米移动电源高配版</a><a sa-data="{'eletp':'xgsskeyword'}"
+                                    name="public0_XGSS_移动电源华为20000快充_6-0" target="_blank"
+                                    href="/%E7%A7%BB%E5%8A%A8%E7%94%B5%E6%BA%90%E5%8D%8E%E4%B8%BA20000%E5%BF%AB%E5%85%85/"
+                                    sap-expo="true">移动电源华为20000快充</a></div>
+                        </form>
+                        <div id="ac_results" class="g-ac-results hide" style="display: none;"></div>
+                        <div id="rec_results" class="g-rec-results hide" style="display: none;">
+                            <ul class="history-results"></ul>
+                            <ul class="rec-results"></ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- LOGO -->
+                <div class="ng-top-act" id="ng-top-act"><a style="position:absolute;right:20px; "
+                        href="http://cuxiao.suning.com/newUser.html" title="客户端扫码" target="_blank"
+                        name="ssdsn_search_erweima"><img
+                            src="//image5.suning.cn/uimg/asbs/ad/1471598193968_pc_search.jpg" alt="客户端扫码"
+                            class="dq-act"></a></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="ng-showsort-warp">
+        <div class="ng-showsort">
+            <ul>
+                <li><a href="./index.html">首页</a></li>
+                <li>手机</li>
+                <li>家电</li>
+                <li>数码</li>
+                <li>压力锅</li>
+                <li>火锅</li>
+                <li>套装锅</li>
+                <li>家居用品</li>
+                <li>厨具</li>
+            </ul>
+
+        </div>
+        </div>
+
+    <div class="content container">
+        <div class="goodsDetail">
+          <div class="enlargeBox">
+    
+          </div>
+          <div class="goodsInfo">
+    
+          </div>
+        </div>
+        <div class="goodsNav">
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="javascript:;">商品详情</a></li>
+            <li role="presentation"><a href="javascript:;">相关商品</a></li>
+            <li role="presentation"><a href="javascript:;">热门商品</a></li>
+          </ul>
+        </div>
+        <div class="goodsDesc">
+    
+        </div>
+      </div>
+
+
+
+
+ 
+
+    <div class="sn-sidebar" sap-modid="hWIP3" style="display: block;">
+        <div class="sn-sidebar-bg"></div>
+        <div class="sn-sidebar-tabs sn-sidebar-middle-tabs" style="top: 178px; height: 307px;">
+            <div class="sn-sidebar-tabs sn-sidebar-middle-tabs-top">
+                <div class="sn-sidebar-tab sn-sidebar-tab-member sn-sidebar-tab-js" data-type="member"
+                    style="visibility: visible;"><a href="javascript:;" name="public0_none_cblnew_huiyuan"><i
+                            class="tab-icon tab-icon-member"></i><i class="tab-icon-tip"></i></a></div>
+                <div class="sn-sidebar-tab sn-sidebar-tab-cart sn-sidebar-tab-js" data-type="cart"><a
+                        href="javascript:;" name="public0_none_cblnew_gouwuche">
+                        <div class="tab-cart-tip-warp-box">
+                            <div class="tab-cart-tip-warp"><i class="tab-icon  tab-icon-cart"></i><i
+                                    class="tab-icon-tip tab-icon-cart-tip"></i><span
+                                    class="tab-cart-tip">购物车</span><span class="tab-cart-num J_cart_total_num">0</span>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="sn-sidebar-tab sn-sidebar-tab-message sn-sidebar-tab-js" data-type="message"><a
+                        href="//snwm.suning.com/" target="_blank" name="public0_none_cblnew_message"><i
+                            class="tab-icon tab-icon-msg"></i><i class="tab-icon-tip"></i><span
+                            class="tab-tip">消息</span></a></div>
+            </div>
+            <div class="sn-sidebar-tabs sn-sidebar-middle-tabs-bottom">
+                <div class="sn-sidebar-tab sn-sidebar-tab-finance sn-sidebar-tab-js" data-type="finance"><a
+                        href="javascript:;" name="public0_none_cblnew_jinrong"><i
+                            class="tab-icon tab-icon-finance"></i><i class="tab-icon-tip"></i><span
+                            class="tab-tip">理财</span></a></div>
+                <div class="sn-sidebar-tab sn-sidebar-tab-history sn-sidebar-tab-js" data-type="history"><a
+                        href="javascript:;" name="public0_none_cblnew_zuji"><i class="tab-icon tab-icon-history"></i><i
+                            class="tab-icon-tip"></i><span class="tab-tip">足迹</span></a></div>
+                <div class="sn-sidebar-tab sn-sidebar-tab-sign sn-sidebar-tab-js" data-type="sign"><a
+                        name="public0_none_cblnew_qiandao" href="//vip.suning.com/sign/welcome.do" target="_blank"><i
+                            class="tab-icon tab-icon-sign"></i><i class="tab-icon-tip"></i><span
+                            class="tab-tip">签到</span></a></div>
+            </div>
+        </div>
+        <div class="sn-sidebar-tabs sn-sidebar-bottom-tabs">
+            <div class="sn-sidebar-tab sn-sidebar-wider-tab sn-sidebar-service sn-sidebar-tab-js hide"
+                id="sn-sidebar-change-service" data-type="servicebox"><a href="javascript:;"
+                    name="public0_none_cblnew_kefu"><i class="tab-icon tab-icon-service"></i><i
+                        class="tab-icon-tip"></i><span class="tab-tip tab-tip-wider">在线咨询</span></a></div>
+            <div class="sn-sidebar-tab sn-sidebar-wider-tab sn-sidebar-feedback sn-sidebar-tab-js hide"
+                id="sn-sidebar-change-feedback"><a href="//qss.suning.com/e58dd.htm" target="_blank"
+                    name="public0_none_cblnew_wenjuan"><i class="tab-icon tab-icon-feedback"></i><span
+                        class="tab-tip tab-tip-wider">意见反馈</span></a></div>
+            <div class="sn-sidebar-tab sn-sidebar-wider-tab sn-sidebar-code sn-sidebar-tab-js"><a href="javascript:;"><i
+                        class="tab-icon-tip tab-icon-code-tip"></i><i class="tab-icon tab-icon-code"></i></a></div>
+            <div class="sn-sidebar-tab sn-sidebar-wider-tab sn-sidebar-to-top sn-sidebar-tab-js"><a
+                    href="javascript:void(0);" name="public0_none_cblnew_back"><i
+                        class="tab-icon tab-icon-to-top"></i><span class="tab-tip tab-tip-wider">返回顶部</span></a></div>
+        </div>
+        <div class="tab-tip-code-warp" id="sn-sidebar-change-code" style="display: none; left: 0px;"><img
+                class="tab-tip-code-warp-img" src="//image.suning.cn/public/v3/images/right-down.png?v=st0001"></div>
+        <div class="sn-sidebar-member-wrap member-white"></div>
+        <div class="sn-sidebar-contents">
+            <div class="sn-sidebar-content sn-sidebar-cart">
+                <div class="ng-sidebar-cart-wrapper"></div>
+            </div>
+            <div class="sn-sidebar-content sn-sidebar-recharge"></div>
+            <div class="sn-sidebar-content sn-sidebar-dacu"></div>
+            <div class="sn-sidebar-content sn-sidebar-member"></div>
+            <div class="sn-sidebar-content sn-sidebar-history"></div>
+            <div class="sn-sidebar-content sn-sidebar-finance"></div>
+            <div class="sn-sidebar-content sn-sidebar-servicebox"></div>
+            <div class="sn-sidebar-all-loading">
+                <p class="loading-content">加载中...</p>
+            </div>
+        </div>
+    </div>
+
+  
+   <!-- 点击跳转购物车 -->
+   <div class="cart-go-warp">
+       <div class="cart-title">温馨提示</div>
+       
+       <div class="cart-go">
+        <span>已成功加入购物车！快去结算吧</span>
+        <a href="./cart.html" class="go-cart" name="cart1_go">去购物车结算<i>&gt;</i></a>
+       </div>
+   </div>
+   <!-- 页面遮罩 -->
+   <div class="fullbg"></div>
+    <script src="./js/jQuery/jquery.min.js"></script>
+    <script src="./js/indexJs/public.js"></script>
+    <script src="./js/indexJs/detail.js"></script>
+</body>
+
+</html>

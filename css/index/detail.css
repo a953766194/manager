@@ -1,0 +1,285 @@
+.content {
+  margin: 30px auto;
+}
+
+.goodsDetail {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.goodsDetail>.enlargeBox {
+  width: 400px;
+  height: 100%;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.goodsDetail>.enlargeBox>.show {
+  width: 400px;
+  height: 400px;
+
+}
+
+.goodsDetail>.enlargeBox>.list {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.goodsDetail>.enlargeBox>.list>p {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.goodsDetail>.enlargeBox>.list>p.active {
+  border-color: red;
+}
+
+.goodsDetail>.goodsInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.goodsDetail>.goodsInfo>.desc {
+  font: 700 16px/1.5 \5FAE\8F6F\96C5\9ED1;
+
+}
+
+.goodsDetail>.goodsInfo>.price {
+  font-size: 20px;
+}
+
+.goodsDetail>.goodsInfo>.price>span {
+  font-size: 30px;
+}
+
+.goodsDetail>.goodsInfo>.num {
+  display: flex;
+}
+
+.goodsDetail>.goodsInfo>.num>button {
+  width: 22px;
+  height: 30px;
+}
+
+.goodsDetail>.goodsInfo>.num>input {
+  height: 30px;
+  width: 37px;
+  text-align: center;
+  border: none;
+
+}
+
+.goodsNav {
+  margin-top: 30px;
+}
+
+img {
+  vertical-align: auto;
+}
+
+.ng-bar-node-box .ng-iconfont .imgCart {
+  vertical-align: auto;
+}
+
+.btn-success {
+  width: 115px;
+  height: 40px;
+  color: #fff;
+  background-color: #663200;
+  border-color: #663200;
+}
+
+.btn-warning {
+  width: 115px;
+  height: 40px;
+  color: #fff;
+  background-color: #ff5500;
+  border-color: #ff5500;
+}
+
+.btn-warning a {
+  color: #fff;
+}
+
+.zy {
+  background-color: #f50;
+  float: left;
+  min-width: 42px;
+  padding: 0 1px;
+  height: 20px;
+  margin: 2px 5px 0 0;
+  _margin-top: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.goodsInfo i {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  color: #999999;
+  font: 12px simsum;
+  letter-spacing: 2em;
+  margin-top: 10px;
+}
+
+.goods-title {
+  font: 700 16px/1.5 \5FAE\8F6F\96C5\9ED1;
+  color: #222;
+  _margin-left: -3px;
+  word-break: break-all;
+  min-height: 24px;
+
+}
+
+.goodsNav {
+
+  background-color: #eeeeee;
+}
+
+.ng-logo-box .ng-logo img {
+  width: 190px;
+  height: 90px;
+}
+
+.ng-showsort-warp {
+  width: 100%;
+  position: relative;
+  background-color: black;
+}
+
+.ng-showsort {
+  width: 990px;
+  margin: 0 auto;
+  height: 40px;
+}
+
+.ng-showsort ul {
+  margin-bottom: 0px;
+  padding-top: 10px;
+  color: #fff;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+
+.ng-showsort ul li {
+
+  padding: 0 20px;
+  display: inline-block;
+}
+
+.ng-showsort a {
+  color: #fff;
+  cursor: pointer;
+
+
+}
+
+.showBigImg {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 782px;
+  top: 215px;
+  border: 1px solid #ccc;
+  display: none;
+  z-index: 999;
+}
+
+.show {
+  position: relative;
+}
+
+.mask {
+  position: absolute;
+  opacity: 1;
+  left: 0px;
+  top: 0px;
+  width: 202px;
+  height: 202px;
+  background-color: rgba(255, 180, 0, 0.5);
+  display: none;
+
+}
+
+.cart-go-warp {
+  width: 448px;
+  height: 442px;
+  position: fixed;
+  margin-left: -224px;
+  margin-top: -96px;
+  top: 50%;
+  left: 50%;
+  background-color: antiquewhite;
+  display: none;
+  z-index: 99999;
+}
+
+.cart-go-warp .cart-title {
+  border-bottom: 1px solid #ccc;
+  background: #eee;
+  padding: 5px 0;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.cart-go {
+  background: #fff;
+  width: 100%;
+  height: 388px;
+  padding: 80px 90px 30px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-go span {
+  float: left;
+  font: 700 18px/32px 'Microsoft YaHei';
+  margin-bottom: 130px;
+}
+
+.cart-go-warp a {
+
+  float: left;
+  margin-left: 50px;
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+  color: #fff;
+  font-family: 'Microsoft YaHei';
+  font-size: 14px;
+  text-align: center;
+  background: #f50;
+  border-radius: 2px;
+}
+.fullbg{
+  position: absolute;
+  background-color: grey;
+  left: 0;
+  top: 0;
+  display: none;
+  /* width: 1920px;
+  height: 10800px; */
+  opacity: 0.5;
+  z-index: 9999;
+}
